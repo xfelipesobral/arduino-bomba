@@ -8,7 +8,7 @@ identificador = "1" # Identificador gerado pela interface
 socket = "" # Endereco que ira receber o socket
 
 # Abre porta serial para leitura
-ser = serial.Serial(porta, transmissao, timeout=0)
+ser = serial.Serial(porta, transmissao, timeout = 1)
 
 # Entra em looping infinito
 while(True):
