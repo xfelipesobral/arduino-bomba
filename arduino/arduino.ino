@@ -154,7 +154,7 @@ void setup() {
 void loop() {
   // Tempo maximo
   if (ciclo > 60) {
-    situacao = 1
+    situacao = 1;
   }
   
   // Checar status
