@@ -22,4 +22,4 @@ while(True):
     linha = str(ser.readline()) # Lendo cada linha ...
     if (len(linha) > 0): # Quando ter alguma informacao na linha
         print(linha)
-        #    requests.post(socket, json = {identificador: linha}) # Envia mensagem para o socket
+        #    requests.post(socket, json = {"id": identificador, "conteudo": linha}) # Envia mensagem para o socket

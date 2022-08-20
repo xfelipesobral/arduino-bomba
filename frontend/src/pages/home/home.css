@@ -1,0 +1,36 @@
+.Home {
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #191919;
+	opacity: 1;
+	background-image: radial-gradient(#303030 0.65px, #191919 0.65px);
+	background-size: 13px 13px;
+	text-align: center;
+}
+
+.Home h1 {
+	margin: 50px 0 15px 0;
+}
+
+.Home p {
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #000000;
+	padding: 5px;
+}
+
+.Home .conectado img {
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	border: 5px solid #fff;
+}
+
+.Home .conectado h1 {
+	font-size: 3rem;
+	font-family: 'Courier New', Courier, monospace;
+}
