@@ -1,11 +1,11 @@
 import serial
-# import requests
+import requests
 
 # Define as variaveis iniciais
 porta = "/dev/cu.usbmodem11201" # Porta em que a placa esta conectada
 transmissao = 9600 # Taxa de transmissao que a placa esta configurada
-identificador = "1" # Identificador gerado pela interface
-socket = "" # Endereco que ira receber o socket
+identificador = "773d0789-7546-4708-8e7c-035c47a12542" # Identificador gerado pela interface
+socket = "http://localhost:3300/socket/comunica" # Endereco que ira receber o socket
 conectado = False
 
 while(conectado == False):
@@ -22,4 +22,4 @@ while(True):
     linha = str(ser.readline()) # Lendo cada linha ...
     if (len(linha) > 0): # Quando ter alguma informacao na linha
         print(linha)
-        #    requests.post(socket, json = {"id": identificador, "conteudo": linha}) # Envia mensagem para o socket
+        requests.post(socket, json = {"id": identificador, "conteudo": linha}) # Envia mensagem para o socket

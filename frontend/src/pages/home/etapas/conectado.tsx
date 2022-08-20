@@ -19,6 +19,15 @@ function Conectado({ ciclo }: iConectado) {
         <div className='conectado'>
             <img src={`/assets/meme/${meme()}.png`} />
             <h1>{ciclo.padStart(2, '0')}</h1>
+
+            <div className='lista'>
+                <ol>
+                    <li>10/2</li>
+                    <li>943.283,48 * 0</li>
+                    <li>#VemParaUFPR</li>
+                    <li>Olhe ao seu redor...</li>
+                </ol>
+            </div>
         </div>
     )
 }

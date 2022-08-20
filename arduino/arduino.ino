@@ -152,6 +152,11 @@ void setup() {
 
 // Inicia bomba...
 void loop() {
+  // Tempo maximo
+  if (ciclo > 60) {
+    situacao = 1
+  }
+  
   // Checar status
   if (situacao != 0) {
     if (!notificouStatusFinal) {

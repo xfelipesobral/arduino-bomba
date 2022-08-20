@@ -2,8 +2,7 @@
 	color: #ffffff;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100vw;
 	height: 100vh;
 	background-color: #191919;
@@ -11,6 +10,18 @@
 	background-image: radial-gradient(#303030 0.65px, #191919 0.65px);
 	background-size: 13px 13px;
 	text-align: center;
+}
+
+.Home a {
+	color: #ffffff;
+}
+
+.Home .conteudo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
 }
 
 .Home h1 {
@@ -23,6 +34,11 @@
 	padding: 5px;
 }
 
+.Home video {
+	width: 100vw;
+	height: 95vh;
+}
+
 .Home .conectado img {
 	border-radius: 100%;
 	width: 200px;
@@ -33,4 +49,25 @@
 .Home .conectado h1 {
 	font-size: 3rem;
 	font-family: 'Courier New', Courier, monospace;
+	margin-bottom: 25px;
+}
+
+.Home .conectado .lista {
+	padding: 20px 40px;
+	color: #fff;
+	text-align: left;
+	border-radius: 10px;
+}
+
+.Home .conectado .lista h2 {
+	margin-bottom: 10px;
+}
+
+.Home .conectado .lista ol {
+	padding-left: 20px;
+}
+
+.Home footer {
+	padding: 10px;
+	background-color: #000000;
 }
